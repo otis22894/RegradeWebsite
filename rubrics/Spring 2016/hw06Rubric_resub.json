@@ -1,0 +1,56 @@
+{
+	"hw06_rubricb": [
+		{
+			"name": "ABCs_conditionals",
+			"testcases": "[A B C D] = ABCs_conditionals(1, 5, [true true true true true]);",
+			"points": 5,
+			"bannedFunctions": [],
+			"expectRecursion": 0
+		},
+		{
+			"name": "beautyAndBrains",
+			"testcases": [
+				"[output1, score1] = beautyAndBrains([9 5 2 0 8], [6 4 3 7 3], [13 29 41 59 71]);",
+				"[output2, score2] = beautyAndBrains(1:3:9, 6:-2:1, [711 911 411]);",
+				"[output3, score3] = beautyAndBrains([6 1 9 2 0 4], [6 7 8 9 0 8], [12 14 16 18 20 22]);"
+			],
+			"points": [7,7,7],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "loveMeTinder",
+			"testcases": [
+				"[tC1] = loveMeTinder('Stephen', [50, 60, 10], [55, 14], 'Notre Dame', true, 'Football');",
+				"[tC2] = loveMeTinder('Melody', [50, 60, 10], [55, 6], 'Indianna State University', true, '\"Love');",
+				"[tC3] = loveMeTinder('JoAnna', [35, 50, 20], [47, 17], 'Georgia Tech', true, '\"When');"
+			],
+			"points": [7,7,7],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "lotteryTickets",
+			"testcases": [
+				"load lotteryNumsB.mat;[prize1B] = lotteryTickets(tickets1B,winning1B);",
+				"load lotteryNumsB.mat;[prize2B] = lotteryTickets(tickets2B,winning2B);",
+				"load lotteryNumsB.mat;[prize3B] = lotteryTickets(tickets3B,winning3B);"
+			],
+			"points": [7,7,7],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "lostThatLovinFeelin",
+			"testcases": [
+				"load('lostThatLovinFeelin_autograderCasesB.mat');[out1]=lostThatLovinFeelin(board1,loc1);",
+				"load('lostThatLovinFeelin_autograderCasesB.mat');[out2]=lostThatLovinFeelin(board2,loc2);",
+				"load('lostThatLovinFeelin_autograderCasesB.mat');[out3]=lostThatLovinFeelin(board3,loc3);",
+				"load('lostThatLovinFeelin_autograderCasesB.mat');[out4]=lostThatLovinFeelin(board4,loc4);"
+			],
+			"points": [8,8,8,8],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		}
+	]
+}

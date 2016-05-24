@@ -1,0 +1,82 @@
+{
+	"hw05_rubricb": [
+		{
+			"name": "ABCs_arrays",
+			"testcases": "[A B C D E F G H] = ABCs_arrays([1 2 3 4;4 3 2 1;4 5 6 7;7 6 5 4], [4 5 6 7;7 6 5 4;1 2 3 4;4 3 2 1]);",
+			"points": 1,
+			"bannedFunctions": [],
+			"expectRecursion": 0
+		},
+		{
+			"name": "ABCs_masking",
+			"testcases": [
+				"[A B C D E] = ABCs_masking(ones(3,3), [82 90 45; 3 7 2; 100 -50 13]);",
+				"[A B C D E] = ABCs_masking(2.*ones(3,3), [90 91 92; 94 93 92; 100 -100 100]);"
+			],
+			"points": [2,2],
+			"bannedFunctions": [],
+			"expectRecursion": 0
+		},
+		{
+			"name": "replaceNaN",
+			"testcases": [
+				"[rep1] = replaceNaN([NaN 0 NaN NaN; 0 2 8 NaN; 7 NaN 4 2; NaN 8 2 NaN], magic(4));",
+				"[rep2] = replaceNaN([0 NaN; NaN 9; 2 NaN; NaN 6], [1 1; 0 7; 18 9; 0 46]);",
+				"[rep3] = replaceNaN([4 2 NaN; 4 2 0; NaN 2 0], [421 69 0; 420 2 69; 4 420 69]);"
+			],
+			"points": [5,6,6],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "camelCase",
+			"testcases": [
+				"[str1] = camelCase('Hello, how are you?');",
+				"[str2] = camelCase('both of us Are running out of time');",
+				"[str3] = camelCase('It''s so typical of me to talk about myself. I''m sorry; I hope that you''re well.');"
+			],
+			"points": [6,6,6],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "modIFY",
+			"testcases": [
+				"[encoded1] = modIFY('Wow! There are so many strings, don''t ya think?', 2);",
+				"[encoded2] = modIFY('Strings are things that don''t have wings.', -29);",
+				"[encoded3] = modIFY('This! Homework! Is! So! Fun!', 8);"
+			],
+			"points": [6,6,6],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "checkMagic",
+			"testcases": [
+				"[test1] = checkMagic(magic(5));",
+				"[test2] = checkMagic(1);",
+				"[test3] = checkMagic(zeros(4, 4));",
+				"[test4] = checkMagic(randi(10, 3, 5));"
+			],
+			"points": [6,6,6,6],
+			"bannedFunctions": [
+				"diag",
+				"unique",
+				"trace",
+				"eye"
+			],
+			"expectRecursion": 0
+		},
+		{
+			"name": "puzzleBox",
+			"testcases": [
+				"load('testCase2.mat');[solutionTest1] = puzzleBox(jumbledTest1, rowsTest1, colsTest1);",
+				"load('testCase2.mat');[solutionTest2] = puzzleBox(jumbledTest2, rowsTest2, colsTest2);",
+				"load('testCase2.mat');[solutionTest3] = puzzleBox(jumbledTest3, rowsTest3, colsTest3);"
+			],
+			"points": [6,6,6],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		}
+	]
+}

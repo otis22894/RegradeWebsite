@@ -1,0 +1,63 @@
+{
+	"hw09_rubric": [
+		{
+			"name": "ABCs_CellArrays",
+			"testcases": [
+				"[A B C D E F] = ABCs_CellArrays({'Hello World', [42 21 7 1], false, {'747'}}, {[false true], 'baby panda', 56}, {'boring', 1020.54, {true}});"
+			]
+		},
+		{
+			"name": "ABCs_HighLevelFileIO",
+			"testcases": [
+				"[xlsNum xlsText xlsRaw] = ABCs_HighLevelFileIO('rubric_hw1grades.xls', 'testingXLSWrite.xls');"
+			]
+		},
+		{
+			"name": "countCelery",
+			"testcases": [
+				"[stolen1] = countCelery({'celery','celery',{{{'celery'},[]},[]},[],'celery',{'celery'}},9);",
+				"[stolen2] = countCelery({{},'celery',[],{[],'celery'},'celery','celery',[],{[],'celery'},'celery'},15);",
+				"[stolen3] = countCelery({{{'celery',{{{'celery'}}},'celery'},'celery'},'celery',[],'celery',{'celery'}},7);"
+			]
+		},
+		{
+			"name": "jackBlack",
+			"testcases": [
+				"text1 = jackBlack({'Kung Fu Panda', 'School of Rock', 'Enemy of the State'}, {[5, 8, 3, 2], [10, 33, 339, 0], [7, 3, 94]}, 'MovieData.xlsx');",
+				"text1 = jackBlack({'School of Rock', 'Ice Age', 'Shark Tale', 'Enemy of the State', 'Gulliver''s Travels'}, {[7.1, 4, 92], [7.6, 77], [4.9, 3, 20], [7, 83, 7, 4], [7.3, 84, 88, 9, 4]}, 'MovieData.xlsx');",
+				"text1 = jackBlack({'Nacho Libre', 'Tropic Thunder', 'Ice Age', 'King Kong'}, {[5.7, 40, 3], [7, 83, 4], [7.3, 84, 4], 100}, 'MovieData.xlsx');"
+			]
+		},
+		{
+			"name": "pantsOnFire",
+			"testcases": [
+				"[out1] = pantsOnFire(closet1a);",
+				"[out2] = pantsOnFire(closet2a);",
+				"[out3] = pantsOnFire(closet3a);"
+			]
+		},
+		{
+			"name": "driveTime",
+			"testcases": [
+				"[new1] = driveTime('grader1.xlsx');",
+				"[new2] = driveTime('grader2.xlsx');",
+				"[new3] = driveTime('grader3.xlsx');"
+			]
+		},
+		{
+			"name": "feeFiFauxPho",
+			"testcases": [
+				"[valid1, updated1] = feeFiFauxPho('recipe1.txt','shoppinglist2.xlsx');",
+				"[valid2, updated2] = feeFiFauxPho('recipe2.txt','shoppinglist2.xlsx');",
+				"[valid3, updated3] = feeFiFauxPho('recipe3.txt','shoppinglist2.xlsx');"
+			]
+		},
+		{
+			"name": "superSmashBros",
+			"testcases": [
+				"[winner1, results1] = superSmashBros('test1_Characters.xls','test1_Scores.xls');",
+				"[winner2, results2] = superSmashBros('test2_Characters.xls','test2_Scores.xls');"
+			]
+		}
+		]
+}

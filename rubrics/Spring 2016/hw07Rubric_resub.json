@@ -1,0 +1,71 @@
+{
+	"hw07_rubricb": [
+		{
+			"name": "ABCs_iteration",
+			"testcases": "[A, B] = ABCs_iteration([0 1 2 3 4 5 6 7], 15);",
+			"points": 5,
+			"bannedFunctions": [],
+			"expectRecursion": 0
+		},
+		{
+			"name": "EVAtime",
+			"testcases": [
+				"[longest1 time1] = EVAtime('Edward Fincke,Fyodor Yurchikhin,Richard Mastracchio', [48.60 51.92 53.07]);",
+				"[longest2 time2] = EVAtime('Norris,Keenan,Mahalakshmi,Kesha,Mona,Jared,Sean,Alex', [6.71 7.61 8.91 2.28 4.99 5.94 0.76 1.87]);",
+				"[longest3 time3] = EVAtime('Apollo,Soyuz,Salyut,Gemini', [175.55 1.77 107.40 26.00]);"
+			],
+			"points": [6,6,6],
+			"bannedFunctions": [
+				"strfind",
+				"find",
+				"strsplit",
+				"regexp"
+			],
+			"expectRecursion": 0
+		},
+		{
+			"name": "changeCalc",
+			"testcases": [
+				"[change1] = changeCalc(.24);",
+				"[change2] = changeCalc(.75);",
+				"[change3] = changeCalc(2.90);"
+			],
+			"points": [6,6,6],
+			"bannedFunctions": [],
+			"expectRecursion": 0
+		},
+		{
+			"name": "ugaMath",
+			"testcases": [
+				"[y1] = ugaMath('func(var1) = 3 * var1 ^ 3', 4);",
+				"[y2] = ugaMath('func(x) = 2 \/ x * 3 ^ x \/ 4 - x \/ x',2);",
+				"[y3] = ugaMath('f(x) = 2 + x \/ 4 + x * x',1);"
+			],
+			"points": [6,6,6],
+			"bannedFunctions": [],
+			"expectRecursion": 0
+		},
+		{
+			"name": "layerBricks",
+			"testcases": [
+				"[arr1] = layerBricks(10,'teal');",
+				"[arr2] = layerBricks(7,'pink');",
+				"[arr3] = layerBricks(1,'chartreuse');"
+			],
+			"points": [6,7,7],
+			"bannedFunctions": [],
+			"expectRecursion": 0
+		},
+		{
+			"name": "cutTheRope",
+			"testcases": [
+				"[loc1, pieces1] = cutTheRope([3, 10]);",
+				"[loc2, pieces2] = cutTheRope([2, 3, 2, 4, 1, 2, -3, 1, -2, 2, 0, 2]);",
+				"[loc3, pieces3] = cutTheRope([10, 9, 10, 8, 9, 1, 2, 0, 3, 0, 4, -3, 6, -8, 9]);"
+			],
+			"points": [7,7,7],
+			"bannedFunctions": [],
+			"expectRecursion": 0
+		}
+	]
+}

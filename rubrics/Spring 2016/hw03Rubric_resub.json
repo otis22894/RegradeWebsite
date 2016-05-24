@@ -1,0 +1,62 @@
+{
+	"hw03_rubricb": [
+		{
+			"name": "ABCs_vectors",
+			"testcases": "[A B C D E F G H I J K L] = ABCs_vectors(10, [1 1 2 9 8 8], [9 0 2]);",
+			"points": 2,
+			"bannedFunctions": [],
+			"expectRecursion": 0
+		},
+		{
+			"name": "ABCs_strings",
+			"testcases": "[A B C D E F G H I J K L] = ABCs_strings('Cell Phone', 'Ring', [111 33 112 44 115], 'U', 'k', 2011, '19238', 'Pencil,Pen,Crayon,Marker');",
+			"points": 3,
+			"bannedFunctions": [],
+			"expectRecursion": 0
+		},
+		{
+			"name": "atbash",
+			"testcases": [
+				"[out1] = atbash('lkahs');",
+				"[out2] = atbash('nmmasdf');",
+				"[out3] = atbash('opaszq');"
+			],
+			"points": [7,8,8],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "potatoGrowth",
+			"testcases": [
+				"[fmtStr1] = potatoGrowth([0, 2, 5, 2], [1, 2, 5, 3]);",
+				"[fmtStr2] = potatoGrowth([1, 2, 4, 8, 17], [1, 3, 4, 7, 9]);",
+				"[fmtStr3] = potatoGrowth([8, 2], [8, 2]);"
+			],
+			"points": [8,8,8],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "packNums",
+			"testcases": [
+				"[packed1] = packNums([901]);",
+				"[packed2] = packNums([561, 781, 934]);",
+				"[packed3] = packNums([222, 371, 957, 870, 810]);"
+			],
+			"points": [8,8,8],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "stretchVec",
+			"testcases": [
+				"[st1] = stretchVec([78, 2, 14], 4);",
+				"[st2] = stretchVec([90, 91], 1);",
+				"[st3] = stretchVec([7, 2, 1], 5);"
+			],
+			"points": [8,8,8],
+			"bannedFunctions": "kron",
+			"expectRecursion": 0
+		}
+	]
+}

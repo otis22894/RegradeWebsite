@@ -1,0 +1,58 @@
+{
+	"hw07_rubric": [
+		{
+			"name": "ABCs_iteration",
+			"testcases": [
+				"[A B] = ABCs_iteration(vec, y);"
+			]
+		},
+		{
+			"name": "countNum",
+			"testcases": [
+				"[count1] = countNum([2 7 8 9;5 6 8 0;2 11 4 5],11);",
+				"[count2] = countNum([2 2;3 5;2 7;9 2],2);",
+				"[count3] = countNum([4 5 9;3 2 1;9 8 26; 45 3 2],21);"
+			]
+		},
+		{
+			"name": "blackJackJr",
+			"testcases": [
+				"[total1] = blackJackJr([8, 1, 4, 0, 9, 9, 7]);",
+				"[total2] = blackJackJr([0, 8, 9, 7, 8, 7, 4]);",
+				"[total3] = blackJackJr([9, 9, 1, 4, 5, 7, 1]);"
+			]
+		},
+		{
+			"name": "brickLayer",
+			"testcases": [
+				"wall1 = brickLayer(5, 7, 'blue')",
+				"wall2 = brickLayer(1, 11, 'beautiful')",
+				"wall3 = brickLayer(9, 23, 'scottsterling')"
+			]
+		},
+		{
+			"name": "scottSterling",
+			"testcases": [
+				"[new1] = scottSterling([18 2 17 10 5 -1 4 7 26 -2; 7 2 1 -1 5 3 -1 -1 2 -2]);",
+				"[new2] = scottSterling([12 -2 27 -2 9 9 27 22 8 13; 1 9 9 1 6 -1 9 4 7 7]);",
+				"[new3] = scottSterling([19 -2 0 14 0 18 4 15 1 21; 3 -1 -2 5 0 3 -1 2 2 0]);"
+			]
+		},
+		{
+			"name": "passwordProtector",
+			"testcases": [
+				"[new1] = passwordProtector('Hallelujah it''s raining men!');",
+				"[new2] = passwordProtector('The Stand by Stephen King is quite an interesting read.');",
+				"[new3] = passwordProtector('Ach Hans Run! It''s the Lurgoyf!');"
+			]
+		},
+		{
+			"name": "templeOfTime",
+			"testcases": [
+				"[weapona1, rupeesa1] = templeOfTime(starta1,carda1,spacea1,lettera1,pota1);",
+				"[weapona2, rupeesa2] = templeOfTime(starta2,carda2,spacea2,lettera2,pota2);",
+				"[weapona3, rupeesa3] = templeOfTime(starta3,carda3,spacea3,lettera3,pota3);"
+			]
+		}
+		]
+}

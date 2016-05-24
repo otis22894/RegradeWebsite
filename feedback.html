@@ -1,0 +1,270 @@
+
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>CS 1371 Regrade Request</title>
+
+       <link rel="shortcut icon" href="images/site_Icon.ico">
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="feedback.css" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,700italic,100,400italic' rel='stylesheet' type='text/css'>        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="feedbackPageWrap">
+            <div id="pageErrors">
+                <div id="pageErrorTitle">Oops! There are some errors on this page</div>
+                <div id="pageErrorSubtitle">Please fix the following errors before continuing:</div>
+                <ul id="errorsList"></ul>
+            </div>
+            <div id="pageTitle">
+                <div class="titleQuestion">Find an <span class="redText">error</span>?</div>
+                <div class="titleQuestion">Want to report a <span class="yellowText">problem</span>?</div>
+                <div class="titleQuestion">Want to say something <span class="greenText">nice</span>?</div>
+                <div class="titleQuestion">Find <span id="waldoText"><span class="redText">W</span><span class="whiteText">a</span><span class="redText">l</span><span class="whiteText">d</span><span class="redText">o</span></span>?</div>
+            </div>
+            <div class="titleQuestion mainTitle">Tell us about it below!</div>
+            <div id="textAreaWrap">
+                <textarea id="feedbackText" name="feedbackText" placeholder="What's on your mind?"></textarea>
+            </div>
+            <div class="contactQuestion">Would you like to be contacted regarding this feedback?</div>
+            <div id="contactedButtonWrap">
+                <div class="yesnoButton yesButton">Yes</div>
+                <div class="yesnoButton">No</div>
+            </div>
+            <div id="contactWrap">
+                <div class="contactQuestion">Please enter your email below so we can contact you</div>
+                <div id="emailWrap">
+                    <div id="emailTitle">Email:</div>
+                    <input type="text" id="emailInput" name="email" />
+                </div>
+            </div>
+            <div id="submitButtonWrap">
+                <div class="contactQuestion">Almost done, press submit below to send it off.</div>
+                <div id="actionButtonsWrap">
+                    <div class="actionButton" id="submitButton">Submit</div>
+                </div>
+            </div>
+            <div id="feedbackErrorPageWrap">
+                <div id="errorPageTitle">Houston, we have a problem</div>
+                <div id="errorPageSubTitle">Something went wrong, but it's (probably) not your fault</div>
+                <div id="errorPageText">Please send your feedback directly to rwilliams306@gatech.edu (or click the button below)</div>
+                <a href="mailto:rwilliams306@gatech.edu?subject=Regrade Website Feedback (Error when submitting feedback)" id="emailButton">The Button Below</a>
+            </div>
+
+            <div id="pac" class="pacOpen"></div>
+            <div id="eaten"></div>
+            <div id="thankYouWrap">
+                <div class="thankYouTitle">Thank You!</div>
+                <div class="thankYouSubTitle">We appreciate your feedback!</div>
+                <div id="thankYouButtonWrap">
+                    <a  href="./index.html" class="thankYouButton" id="returnButton">Return To Regrade Site</a>
+                    <a href="./feedback.html" class="thankYouButton" id="submitMoreButton">Submit More Feedback</a>
+                </div>
+            </div>
+            <div id="pageCover"></div>
+
+        </div>
+
+
+        <script>
+
+            count = 0;
+            var viewportWidth = $(window).width();
+            var viewportHeight = $(window).height();
+            function runPacman(){
+                $("html, body").animate({ scrollTop: 0 }, "fast");
+                $("#submitButton").addClass('submitButtonRemoveAction');
+                $("body").css("overflow","hidden");
+                for(var i = -40;i<100;i++){
+                    $("#pac").animate({left:(i+1).toString() + "vw"},20,function(){
+                        if(count%4==0){
+                            if($("#pac").hasClass('pacOpen')){
+                                $("#pac").removeClass('pacOpen').addClass('pacClosed');
+                            }else{
+                                $("#pac").addClass('pacOpen').removeClass('pacClosed');
+                            }
+                        }
+                        $("#eaten").css({left: (($("#pac").width()/2 + $("#pac").offset().left) - (viewportWidth * 1.53)).toString() + "px"});
+                        $("#pageCover").animate({left: (($("#pac").width()/2 + $("#pac").offset().left) - (viewportWidth * 1.53)).toString() + "px"},20);
+                        $("#thankYouWrap").css({left:(count-139).toString() + "vw"});
+                        count++;
+                    });
+                }
+            }
+
+            var feedbackValid = false;
+            var emailValid = false;
+
+            function validatePage(){
+                if(feedbackValid && emailValid){
+                    $('#submitButtonWrap').addClass('showSubmitButton');
+                }else{
+                    $('#submitButtonWrap').removeClass('showSubmitButton');
+                }
+            }
+
+            $('#feedbackText').on('input',function(e){
+                if($(this).val().length > 0){
+                    feedbackValid = true;
+                }else{
+                    feedbackValid = false;
+                }
+
+                validatePage();
+            });
+
+            $('#emailInput').on('input',function(e){
+                var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+                if(pattern.test($(this).val())){
+                    emailValid = true;
+                }else{
+                    emailValid = false;
+                }
+
+                validatePage();
+            });
+
+            $('.yesnoButton').on('click',function(e){
+                $(this).addClass('yesnoButtonSelected');
+                if($('.yesnoButton').not($(this)).hasClass('yesnoButtonSelected')){
+                    $('.yesnoButton').not($(this)).removeClass('yesnoButtonSelected')
+                }
+
+                if($(this).hasClass('yesButton')){
+                    $('#contactWrap').addClass('contactWrapShow');
+                    emailValid = false;
+                } else {
+                    emailValid = true;
+                    $('#contactWrap').removeClass('contactWrapShow');
+                }
+
+                validatePage();
+            });
+
+            var interval;
+            var intervalCount = -1;
+
+            $('#waldoText').click(function(e){
+
+                var waldo = $('<div class="waldo"></div>');
+                var position = Math.round(Math.random() * 2);
+                var percent = Math.random() * 89;
+                if(position==0){
+                    waldo.addClass('waldoTop');
+                    waldo.css({'left':percent + '%'});
+                    $('#feedbackPageWrap').append(waldo).hide().show(0);
+                    waldo.addClass('showWaldoTop');
+                }else if(position==1){
+                    waldo.addClass('waldoRight');
+                    waldo.css({'top':percent + '%'});
+                    $('#feedbackPageWrap').append(waldo).hide().show(0);
+                    waldo.addClass('showWaldoRight');
+                }else{
+                    waldo.addClass('waldoLeft');
+                    waldo.css({'top':percent + '%'});
+                    $('#feedbackPageWrap').append(waldo).hide().show(0);
+                    waldo.addClass('showWaldoLeft');
+                }
+
+                var letters = $('#waldoText').children();
+
+                clearInterval(interval);
+                intervalCount++;
+
+                interval = setInterval(function(){
+                    setTimeout(function(e){
+                        $(letters[0]).toggleClass('redText').toggleClass('whiteText');
+                        setTimeout(function(e){
+                            $(letters[1]).toggleClass('redText').toggleClass('whiteText');
+                            setTimeout(function(e){
+                                $(letters[2]).toggleClass('redText').toggleClass('whiteText');
+                                setTimeout(function(e){
+                                    $(letters[3]).toggleClass('redText').toggleClass('whiteText');
+                                    setTimeout(function(e){
+                                        $(letters[4]).toggleClass('redText').toggleClass('whiteText');
+                                    },40);
+                                },40);
+                            },40);
+                        },40);
+                    },40);
+                },200);
+
+                setTimeout(function(){
+                    if(intervalCount<=0){
+                        clearInterval(interval);
+                        intervalCount = -1;
+                    }else{
+                        intervalCount--;
+                        console.log(intervalCount);
+                    }
+                },5000);
+
+            });
+
+            /*function showErrors(errorStr){
+                if(!$('#pageErrors').hasClass('showPageErrors')){
+                    $('#pageErrors').addClass('showPageErrors');
+                    $('#errorsList').append(errorStr);
+                } else {
+                    $('#errorsList').html('');
+                    $('#errorsList').append(errorStr);
+                }
+                $("html, body").animate({ scrollTop: 0 }, "fast");
+            }*/
+
+            function showErrorPage(){
+                $("#feedbackErrorPageWrap").animate({left:0},700);
+                $("html, body").animate({ scrollTop: 0 }, "fast");
+            }
+
+            $('#submitButton').on('click',function(e){
+
+                //TODO: VALIDATE
+
+                var valid = true;
+
+                if(valid){
+
+                    //$(this).html('').addClass('showLoadingButton');
+
+                    var regradeData = {
+                        "feedback":$('#feedbackText').val(),
+                        "response_request":$('.yesButton').hasClass('yesnoButtonSelected'),
+                        "email":$('#emailInput').val()
+                    };
+
+                    regradeData = {formData:regradeData};
+                    console.log(regradeData);
+
+                    $.ajax({
+                        url: './php/processFeedback.php',
+                        data: regradeData,
+                        type: 'POST',
+                        dataType:'json',
+                        success: function(response){  
+                            console.log(response);
+                            if(response.type=="error"){
+                                showErrorPage();
+                            }else if(response.type=="success"){
+                                runPacman();
+                            }
+                        },
+                        error: function(response){
+                            showErrorPage();
+                        }
+                    });
+                }
+
+            });
+        </script>
+
+    </body>
+
+</html>

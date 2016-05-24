@@ -1,0 +1,71 @@
+{
+	"hw_rubric": [
+		{
+			"name": "ABCs_recursion",
+			"testcases": [
+				"GCD1 = ABCs_recursion(440,22);",
+				"GCD2 = ABCs_recursion(6,18);"
+			]
+		},
+		{
+			"name": "choCollatz",
+			"testcases": [
+				"[left1, num1] = choCollatz(12);",
+				"[left2, num2] = choCollatz(255);",
+				"[left3, num3] = choCollatz(1);"
+			]
+		},
+		{
+			"name": "jinkies",
+			"testcases": [
+				"[villain1, masks1] = jinkies(stWitch);",
+				"[villain2, masks2] = jinkies(stScrappy);",
+				"[villain3, masks3] = jinkies(stKnight);"
+			]
+		},
+		{
+			"name": "speedStack",
+			"testcases": [
+				"stack1 = speedStack(16,'*');",
+				"stack2 = speedStack(10,'.');",
+				"stack3 = speedStack(41,'&');"
+			]
+		},
+		{
+			"name": "determinant",
+			"testcases": [
+				"det1 = determinant([3 9; 4 1]);",
+				"det2 = determinant([1 5 6; 9 2 0; 4 1 7]);",
+				"det3 = determinant([7 8 1 5; 1 3 2 8; 1 9 2 7; 9 5 1 3]);",
+				"det4 = determinant([5 6 1 9 2; 6 9 1 7 2; 7 1 3 8 1; 2 8 5 3 2; 2 0 4 3 8]);"
+			]
+		},
+		{
+			"name": "fountainOfYouth",
+			"testcases": [
+				"[log1] = fountainOfYouth(maze1);",
+				"[log2] = fountainOfYouth(maze2);",
+				"[log3] = fountainOfYouth(maze3);",
+				"[log5] = fountainOfYouth(maze5);"
+			]
+		},
+		{
+			"name": "flood",
+			"testcases": [
+				"[new1] = flood([0, 0, 5, 1, 1]);",
+				"[new2] = flood([1, 1, 1, 4, 2, 2, 2, 3]);",
+				"[new3] = flood([1, 3, 5, 2, 5, 3, 1]);",
+				"[new4] = flood([1, 3, 5, 2, 5, 3, 1]);",
+				"[new5] = flood([8, 3, 5, 1, 8, 7, 8, 4, 7, 2, 3, 5, 1, 14, 10, 14])"
+			]
+		},
+		{
+			"name": "sixDegreesOfWaldo",
+			"testcases": [
+				"[exists1 depth1] = sixDegreesOfWaldo(waldo1)",
+				"[exists2 depth2] = sixDegreesOfWaldo(waldo2)",
+				"[exists3 depth3] = sixDegreesOfWaldo(waldo3)"
+			]
+		}
+		]
+}

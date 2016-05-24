@@ -1,0 +1,72 @@
+{
+	"hw08_rubrica": [
+		{
+			"name": "ABCs_lowLevelFileIO",
+			"testcases": "[A, B, C, D] = ABCs_lowLevelFileIO('abcs_lights.txt', 'abcs_out.txt')",
+			"points": 5,
+			"bannedFunctions": [],
+			"expectRecursion": 0,
+			"expectText": 1
+		},
+		{
+			"name": "detention",
+			"testcases": [
+				"detention('The swallow may fly south with the sun.', 10, 2);",
+				"detention('A swallow needs to beat its wings 43 times every second.', 18, 3);",
+				"detention('Are you suggesting coconuts migrate?', 35, 5);"
+			],
+			"points": [6,6,6],
+			"bannedFunctions": [],
+			"expectRecursion": 0,
+			"expectText": 1
+		},
+		{
+			"name": "hashtagMATLAB",
+			"testcases": [
+				"[sol1] = hashtagMATLAB('Hancock.txt');",
+				"[sol2] = hashtagMATLAB('JimKirk.txt');",
+				"[sol3] = hashtagMATLAB('FeloniusGru.txt');"
+			],
+			"points": [6,6,6],
+			"bannedFunctions": [],
+			"expectRecursion": 0,
+			"expectText": 0
+		},
+		{
+			"name": "deAdamize",
+			"testcases": [
+				"deAdamize('test1.txt', 'replace.txt');",
+				"deAdamize('test2.txt', 'replace.txt');",
+				"deAdamize('test3.txt', 'replace.txt');"
+			],
+			"points": [6,6,6],
+			"bannedFunctions": [],
+			"expectRecursion": 0,
+			"expectText": 1
+		},
+		{
+			"name": "bandName",
+			"testcases": [
+				"[name1]=bandName('list1.txt');",
+				"[name2]=bandName('list2.txt');",
+				"[name3]=bandName('list3.txt');"
+			],
+			"points": [6,7,7],
+			"bannedFunctions": [],
+			"expectRecursion": 0,
+			"expectText": 0
+		},
+		{
+			"name": "bracketCheck",
+			"testcases": [
+				"[check1] = bracketCheck('graderTest1.txt');",
+				"[check2] = bracketCheck('graderTest2.txt');",
+				"[check3] = bracketCheck('graderTest3.txt');"
+			],
+			"points": [7,7,7],
+			"bannedFunctions": [],
+			"expectRecursion": 0,
+			"expectText": 1
+		}
+	]
+}

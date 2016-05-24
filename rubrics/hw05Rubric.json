@@ -1,0 +1,64 @@
+{
+	"hw05_rubric": [
+		{
+			"name": "ABCs_arrays",
+			"testcases": [
+				"[A B C D E F G H] = ABCs_arrays(a1, a2);"
+			]
+		},
+		{
+			"name": "ABCs_masking",
+			"testcases": [
+				"[A B C D E] = ABCs_masking(a1, a2);",
+				"[A B C D E] = ABCs_masking(a3,a4);"
+			]
+		},
+		{
+			"name": "arrReplace",
+			"testcases": [
+				"[replaced1] = arrReplace([5 5 5; 0 2 8; 7 5 4], magic(3), 5);",
+				"[replaced2] = arrReplace([1 9 9 2; 0 2 2 8], [8 5 2 6; 1 4 2 7], 2);",
+				"[replaced3] = arrReplace([7 5; 3 1; 4 3; 9 2; 0 3], [3 3; 3 7; 5 8; 0 1; 2 6], 3);"
+			]
+		},
+		{
+			"name": "asciiResize",
+			"testcases": [
+				"[out1] = asciiResize(SR71,1.67);",
+				"[out2] = asciiResize(Pikachu,1.111);",
+				"[out3] = asciiResize(AirJordan,2.25);"
+			]
+		},
+		{
+			"name": "howFall",
+			"testcases": [
+				"[log1, fall1] = howFall([40, 44, 30, 15; 66, 7, 23, 18],16)",
+				"[log2, fall2] = howFall([9 15; 2 15; 4 2; 3 8; 7 4; 3 3], 9)",
+				"[log3, fall3] = howFall([9 14; 2 15; 4 2; 13 8; 7 12; 3 3], 14)"
+			]
+		},
+		{
+			"name": "powerOfTwo",
+			"testcases": [
+				"power1 = powerOfTwo(1027)",
+				"power2 = powerOfTwo(512)",
+				"power3 = powerOfTwo(0)"
+			]
+		},
+		{
+			"name": "deflateGate",
+			"testcases": [
+				"[filtered1, broken1] = deflateGate(quarter1, quarter2, quarter3, quarter4);",
+				"[filtered2, broken2] = deflateGate(q1, q2, q3, q4);"
+			]
+		},
+		{
+			"name": "camelCase",
+			"testcases": [
+				"[log1] = camelCase('Homework Team is Dope')",
+				"[log2] = camelCase('the Sun will COME OUt TomORROw')",
+				"[log3] =camelCase('Fresher THAN MY CLIQUE')"
+			]
+		}
+		]
+}

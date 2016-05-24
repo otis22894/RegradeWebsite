@@ -1,0 +1,82 @@
+{
+	"hw05_rubrica": [
+		{
+			"name": "ABCs_arrays",
+			"testcases": "[A B C D E F G H] = ABCs_arrays([1 0 3 4; 5 6 1 8], [1 3 4 7; 1 5 3 5]);",
+			"points": 1,
+			"bannedFunctions": [],
+			"expectRecursion": 0
+		},
+		{
+			"name": "ABCs_masking",
+			"testcases": [
+				"[A B C D E] = ABCs_masking(ones(3,3), [82 90 45; 3 7 2; 100 -50 13]);",
+				"[A B C D E] = ABCs_masking(2.*ones(3,3), [90 91 92; 94 93 92; 100 -100 100]);"
+			],
+			"points": [2,2],
+			"bannedFunctions": [],
+			"expectRecursion": 0
+		},
+		{
+			"name": "replaceNaN",
+			"testcases": [
+				"[rep1] = replaceNaN([NaN NaN NaN; 0 2 8; 7 NaN NaN], magic(3));",
+				"[rep2] = replaceNaN([1 9 9 NaN; 0 NaN NaN 8], [8 5 2 7; 1 4 2 7]);",
+				"[rep3] = replaceNaN([NaN 5; NaN 1; 4 NaN; 9 2; 0 NaN], [3 3; 3 7; 5 8; 0 1; 2 6]);"
+			],
+			"points": [5,6,6],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "camelCase",
+			"testcases": [
+				"[str1] = camelCase('Hello, it''s me.');",
+				"[str2] = camelCase('hello, Can You Hear Me?');",
+				"[str3] = camelCase('Hello from the other side; I must have called 1000 times!!');"
+			],
+			"points": [6,6,6],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "modIFY",
+			"testcases": [
+				"[encoded1] = modIFY('Last test-case, yay!!', -1);",
+				"[encoded2] = modIFY('I like MATLAB coding so much!', 2);",
+				"[encoded3] = modIFY('Making up strings; it''s great time.', 31);"
+			],
+			"points": [6,6,6],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "checkMagic",
+			"testcases": [
+				"[magic1] = checkMagic([1 2 3]);",
+				"[magic2] = checkMagic([8 1 6;3 5 7;4 9 2]);",
+				"[magic3] = checkMagic([1 2 3;4 5 6;7 8 9]);",
+				"[magic4] = checkMagic(ones(8, 8) - 3);"
+			],
+			"points": [6,6,6,6],
+			"bannedFunctions": [
+				"diag",
+				"unique",
+				"trace",
+				"eye"
+			],
+			"expectRecursion": 0
+		},
+		{
+			"name": "puzzleBox",
+			"testcases": [
+				"load('testCase1.mat');[solutionTest1] = puzzleBox(jumbledTest1, rowsTest1, colsTest1);",
+				"load('testCase1.mat');[solutionTest2] = puzzleBox(jumbledTest2, rowsTest2, colsTest2);",
+				"load('testCase1.mat');[solutionTest3] = puzzleBox(jumbledTest3, rowsTest3, colsTest3);"
+			],
+			"points": [6,6,6],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		}
+	]
+}

@@ -1,0 +1,92 @@
+{
+	"hw10_rubricb": [
+		{
+			"name": "ABCs_structures",
+			"testcases": [
+				"[A1 B1 C1 D1 E1 F1 G1 H1 I1 J1 K1]= ABCs_structures('1:33', 04232011, '12:33', 05242010, struct('City', 'Atlanta', 'Major', 'Unknown'), struct('State', 'Alabama', 'TimeZone', 'Central'), 'TimeZone', 23);",
+				"[A2 B2 C2 D2 E2 F2 G2 H2 I2 J2 K2]= ABCs_structures('23:45', 01012011, '12:43', 12242010, struct('City', 'New York'), struct('State', 'New Jersey', 'TimeZone', 'Eastern', 'Major', 'Bill Rodgers'), 'Major', struct('CS', '1371'));"
+			],
+			"points": [1,1],
+			"bannedFunctions": [],
+			"expectRecursion": 0,
+			"expectText": 0,
+			"expectImage": 0,
+			"expectPlot": 0,
+			"expectExcel": 0
+		},
+		{
+			"name": "ABCs_structureArrays",
+			"testcases": [
+				"[A1 B1 C1 D1]= ABCs_structureArrays(struct('major', 'ISYE', 'dept', 23, 'school', 'GT'), struct('major', 'ME', 'dept', 13, 'school', 'VT'), struct('major', 'CS', 'dept', 'CoC', 'school', 'Yale'), struct('college', 'UGA', 'state', 'GA'));",
+				"[A2 B2 C2 D2]= ABCs_structureArrays(struct('state', 'Georgia', 'town', 'Lawrenceville'), struct('state', 'Tennessee', 'town', 'Nashville'), struct('state', 'New York', 'town', 'Albany'), struct('college', 'MIT', 'state', 'MA'));"
+			],
+			"points": [1,2],
+			"bannedFunctions": [],
+			"expectRecursion": 0,
+			"expectText": 0,
+			"expectImage": 0,
+			"expectPlot": 0,
+			"expectExcel": 0
+		},
+		{
+			"name": "structDisp",
+			"testcases": [
+				"load('sDisp.mat');[disp1] = structDisp(sDisp4);",
+				"load('sDisp.mat');[new2] = structDisp(sDisp5);",
+				"load('sDisp.mat');[new3] = structDisp(sDisp6);"
+			],
+			"points": [7,8,8],
+			"bannedFunctions": "",
+			"expectRecursion": 0,
+			"expectText": 0,
+			"expectImage": 0,
+			"expectPlot": 0,
+			"expectExcel": 0
+		},
+		{
+			"name": "structFind",
+			"testcases": [
+				"load('structs_grader.mat');[idx4] = structFind(test4, 'other');",
+				"load('structs_grader.mat');[idx5] = structFind(test5, key5);",
+				"load('structs_grader.mat');[idx6] = structFind(test6, key6);"
+			],
+			"points": [8,8,8],
+			"bannedFunctions": "",
+			"expectRecursion": 0,
+			"expectText": 0,
+			"expectImage": 0,
+			"expectPlot": 0,
+			"expectExcel": 0
+		},
+		{
+			"name": "colorGrad",
+			"testcases": [
+				"load('testb.mat');[soln1] = colorGrad(test1b, 'blue', 'blue');",
+				"load('testb.mat');[soln2] = colorGrad(test2b, 'green', 'red');",
+				"load('testb.mat');[soln3] = colorGrad(test3b, 'blue', 'green');"
+			],
+			"points": [8,8,8],
+			"bannedFunctions": "",
+			"expectRecursion": 0,
+			"expectText": 0,
+			"expectImage": 0,
+			"expectPlot": 0,
+			"expectExcel": 0
+		},
+		{
+			"name": "foodChain",
+			"testcases": [
+				"[chain7] = foodChain('foodChain7.xlsx');",
+				"[chain8] = foodChain('foodChain8.xlsx');",
+				"[chain9] = foodChain('foodChain9.xlsx');"
+			],
+			"points": [8,8,8],
+			"bannedFunctions": "",
+			"expectRecursion": 0,
+			"expectText": 0,
+			"expectImage": 0,
+			"expectPlot": 0,
+			"expectExcel": 0
+		}
+	]
+}

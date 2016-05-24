@@ -1,0 +1,58 @@
+{
+	"hw08_rubric": [
+		{
+			"name": "ABCs_LowLevelFileIO",
+			"testcases": [
+				"[line1, line2, A, B] = ABCs_LowLevelFileIO('abcs_lights.txt', 'abcs_out.txt')"
+			]
+		},
+		{
+			"name": "detention",
+			"testcases": [
+				"result1 = detention('handCramps1.txt', 'I will never ever EVER skip class again.')",
+				"result2 = detention('handCramps2.txt', 'I will never curse at Matlab again while I''m at Georgia Tech.')",
+				"result3 = detention('handCramps4.txt', 'I must not tell lies.')"
+			]
+		},
+		{
+			"name": "hwGrader",
+			"testcases": [
+				"[score1] = hwGrader('test1c.txt','test1d.txt')",
+				"[score2] = hwGrader('test2c.txt','test2d.txt')",
+				"[score3] = hwGrader('test3c.txt','test3d.txt')"
+			]
+		},
+		{
+			"name": "krustyKrab",
+			"testcases": [
+				"[total1] = krustyKrab('Order1.txt');",
+				"[total2] = krustyKrab('Special_Order.txt');",
+				"[total3] = krustyKrab('Extra_Order.txt');"
+			]
+		},
+		{
+			"name": "australianSecretAgent",
+			"testcases": [
+				"[agent1] = australianSecretAgent('convo1.txt')",
+				"[agent2] = australianSecretAgent('convo2.txt')",
+				"[agent3] = australianSecretAgent('convo3.txt')"
+			]
+		},
+		{
+			"name": "ottendorf",
+			"testcases": [
+				"[out1] = ottendorf('lyrics','cipher_1.txt')",
+				"[out2] = ottendorf('lyrics','cipherRubricA.txt')",
+				"[out3] = ottendorf('quote','cipherRubricC.txt')"
+			]
+		},
+		{
+			"name": "rhymeTarragon",
+			"testcases": [
+				"[new1] = rhymeTarragon('ptest.txt');",
+				"[new2] = rhymeTarragon('poem2.txt');",
+				"[new3] = rhymeTarragon('ptest1.txt');"
+			]
+		}
+		]
+}

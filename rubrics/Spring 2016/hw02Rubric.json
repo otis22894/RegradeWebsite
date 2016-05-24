@@ -1,0 +1,55 @@
+{
+	"hw02_rubrica": [
+		{
+			"name": "ABCs_moreFunctions",
+			"testcases": "[A, B, C, D, E, F, G, H, I, J, K] = ABCs_moreFunctions('DNE')",
+			"points": 5,
+			"bannedFunctions": [],
+			"expectRecursion": 0
+		},
+		{
+			"name": "solveQuad",
+			"testcases": [
+				"[root1a, root2a] = solveQuad(1, 0, -81);",
+				"[root1b, root2b] = solveQuad(1, -7, 0);",
+				"[root1c, root2c] = solveQuad(2, -3, -10);"
+			],
+			"points": [7,7,7],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "inAndOut",
+			"testcases": [
+				"[outer1, inner1] = inAndOut(4);",
+				"[outer2, inner2] = inAndOut(6);",
+				"[outer3, inner3] = inAndOut(7);"
+			],
+			"points": [8,8,8],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "sepDigits",
+			"testcases": [
+				"[huns1, tens1, ones1] = sepDigits(123);",
+				"[huns2, tens2, ones2] = sepDigits(171);",
+				"[huns3, tens3, ones3] = sepDigits(671);"
+			],
+			"points": [8,8,8],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "clockHands",
+			"testcases": [
+				"[hrHand1, minHand1] = clockHands(5, 50, 10);",
+				"[hrHand2, minHand2] = clockHands(11, 20, -30);",
+				"[hrHand3, minHand3] = clockHands(10, 15, 305);"
+			],
+			"points": [8,8,10],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		}
+	]
+}

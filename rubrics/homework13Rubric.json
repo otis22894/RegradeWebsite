@@ -1,0 +1,58 @@
+{
+	"hw13_rubric": [
+		{
+            "name": "ABCs_images",
+            "testcases": [
+                "[A B C D E] = ABCs_images('abcs_pretest1.png', 'pretest_out.png');"
+            ]
+        },
+        {
+			"name": "polyFun",
+			"testcases": [
+				"load('dataFitA.mat'); polyFun(x1a,y1a,p1a);",
+				"load('dataFitA.mat'); polyFun(x2a,y2a,p2a);",
+				"load('dataFitA.mat'); polyFun(x3a,y3a,p3a);"
+			]
+		},
+		{
+			"name": "checkImage",
+			"testcases": [
+				"out = checkImage('apples.png', 'oranges.png');",
+				"out2 = checkImage('rubric_grapes.png', 'rubric_grapes.png');",
+				"out3 = checkImage('rubric_grapes.png', 'rubric_grapes2.png');"
+			]
+		},
+		{
+			"name": "trumpYourCat",
+			"testcases": [
+				"trumpYourCat('testA.png', 'toupeeA1.png');",
+				"trumpYourCat('testB.png', 'toupeeB1.png');"
+			]
+		},
+		{
+			"name": "hairParlour",
+			"testcases": [
+				"hairParlour('kPossible.png', 'Red', 'Brunette');",
+				"hairParlour('DeeDee.png', 'Blonde', 'Blonde');",
+				"hairParlour('Lauren.png', 'Blonde', 'Brunette');",
+                "hairParlour('rapunzel.png', 'Blonde', 'Brunette');"
+			]
+		},
+		{
+			"name": "ascii2image",
+			"testcases": [
+				"load('ASCIIkey.mat'); ascii2image('test1.txt', chars, vals);",
+				"load('ASCIIkey.mat'); ascii2image('test2.txt', chars, vals);"
+			]
+		},
+		{
+			"name": "snapchat",
+			"testcases": [
+				"snapchat('coke_world.png', 1, []);",
+				"load('geofilter.mat'); snapchat('centennial_park.png', 4, geofilter);",
+				"snapchat('varsity.png', 3, 1.5);",
+                "snapchat('varsity2.png', 2, []);"
+			]
+		}
+        ]
+}

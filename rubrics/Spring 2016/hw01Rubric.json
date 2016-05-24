@@ -1,0 +1,62 @@
+{
+	"hw01_rubrica": [
+		{
+			"name": "ABCs_homeworkOverview",
+			"testcases": "[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R] = ABCs_homeworkOverview(4, 5, 7)",
+			"points": 2,
+			"bannedFunctions": [],
+			"expectRecursion": 0
+		},
+		{
+			"name": "ABCs_functions",
+			"testcases": "[A, B, C, D, E, F, G, H, I, J, K] = ABCs_functions()",
+			"points": 3,
+			"bannedFunctions": [],
+			"expectRecursion": 0
+		},
+		{
+			"name": "freefall",
+			"testcases": [
+				"[v_f1] = freefall(0, 4);",
+				"[v_f2] = freefall(2, 2);",
+				"[v_f3] = freefall(-5, 10);"
+			],
+			"points": [7,8,8],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "splitTicket",
+			"testcases": [
+				"[amt1] = splitTicket(34.34, .15, 3);",
+				"[amt2] = splitTicket(103.67, .2, 5);",
+				"[amt3] = splitTicket(45, .15, 3);"
+			],
+			"points": [8,8,8],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "fib",
+			"testcases": [
+				"[nFib1] = fib(6);",
+				"[nFib2] = fib(15);",
+				"[nFib3] = fib(92);"
+			],
+			"points": [8,8,8],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		},
+		{
+			"name": "triArea",
+			"testcases": [
+				"[area1] = triArea(23, 23, 2);",
+				"[area2] = triArea(45, 45, 4);",
+				"[area3] = triArea(73, 38, 5);"
+			],
+			"points": [8,8,8],
+			"bannedFunctions": "",
+			"expectRecursion": 0
+		}
+	]
+}

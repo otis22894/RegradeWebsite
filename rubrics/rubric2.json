@@ -1,0 +1,185 @@
+{
+	"hw13_rubric": [
+		{
+			"name": "meanEvenOrOdd",
+			"testcases": [
+				"avg1 = meanEvenOrOdd([141,6,55,9,19,165,139,63,190,7], 'odd'); ",
+				"avg2 = meanEvenOrOdd([88,76,153,159,37,98,89,129,142,151], 'odd'); ",
+				"avg3 = meanEvenOrOdd([55,136,131,33,24,100,192,68,117,45], 'even'); "
+			],
+			"points": [2,3,3],
+			"bannedFunctions": [
+				"clear",
+				"clc"
+			],
+			"expectText": 0,
+			"expectExcel": 0,
+			"expectPlot": 0,
+			"expectImage": 0,
+			"expectRecursion": 0
+		},
+		{
+			"name": "worldSeries",
+			"testcases": [
+				"load('Baseball.mat'); [win1, vic1, mostHalf1, mostInn1, blankHalf1] = worldSeries(g1, t1); ",
+				"load('Baseball.mat'); [win2, vic2, mostHalf2, mostInn2, blankHalf2] = worldSeries(g2, t2);",
+				"load('Baseball.mat'); [win3, vic3, mostHalf3, mostInn3, blankHalf3] = worldSeries(g3, t3);"
+			],
+			"points": [2,3,3],
+			"bannedFunctions": [
+				"clear",
+				"clc"
+			],
+			"expectText": 0,
+			"expectExcel": 0,
+			"expectPlot": 0,
+			"expectImage": 0,
+			"expectRecursion": 0
+		},
+		{
+			"name": "rainfall",
+			"testcases": [
+				"[outSize1] = rainfall(2.8, 165);",
+				"[outSize2] = rainfall(4.4, 224); ",
+				"[outSize3] = rainfall(1.0, 40);"
+			],
+			"points": [2,3,3],
+			"bannedFunctions": [
+				"clear",
+				"clc"
+			],
+			"expectText": 0,
+			"expectExcel": 0,
+			"expectPlot": 0,
+			"expectImage": 0,
+			"expectRecursion": 0
+		},
+		{
+			"name": "punchLine",
+			"testcases": [
+				"[joke1] = punchLine('Chicken1.txt'); ",
+				"[joke2] = punchLine('Chicken2.txt'); ",
+				"[joke3] = punchLine('Chicken3.txt'); "
+			],
+			"points": [2,3,3],
+			"bannedFunctions": [
+				"clear",
+				"clc"
+			],
+			"expectText": 0,
+			"expectExcel": 0,
+			"expectPlot": 0,
+			"expectImage": 0,
+			"expectRecursion": 0
+		},
+		{
+			"name": "defeatZurg",
+			"testcases": [
+				"load('Emperor_Zurg.mat'); outcome1 = defeatZurg('Zurg1.png', lasers1); ",
+				"load('Emperor_Zurg.mat'); outcome2 = defeatZurg('Zurg2.png', lasers2); ",
+				"load('Emperor_Zurg.mat'); outcome3 = defeatZurg('Zurg3.png', lasers3); "
+			],
+			"points": [3,3,3],
+			"bannedFunctions": [
+				"clear",
+				"clc"
+			],
+			"expectText": 0,
+			"expectExcel": 0,
+			"expectPlot": 0,
+			"expectImage": 0,
+			"expectRecursion": 0
+		},
+		{
+			"name": "highRise",
+			"testcases": [
+				"load('Building_Data.mat'); highRise(buildings1); ",
+				"load('Building_Data.mat'); highRise(buildings2); ",
+				"load('Building_Data.mat'); highRise(buildings3); "
+			],
+			"points": [3,3,3],
+			"bannedFunctions": [
+				"clear",
+				"clc"
+			],
+			"expectText": 0,
+			"expectExcel": 0,
+			"expectPlot": 0,
+			"expectImage": 0,
+			"expectRecursion": 0
+		},
+		{
+			"name": "dataRead",
+			"testcases": [
+				"dataRead('test_1.txt'); ",
+				"dataRead('test_2.txt'); ",
+				"dataRead('test_3.txt'); "
+			],
+			"points": [3,3,3],
+			"bannedFunctions": [
+				"clear",
+				"clc"
+			],
+			"expectText": 0,
+			"expectExcel": 0,
+			"expectPlot": 0,
+			"expectImage": 0,
+			"expectRecursion": 0
+		},
+		{
+			"name": "rollerCoaster",
+			"testcases": [
+				"[ride1] = rollerCoaster('Forest_Frontier.xlsx', 'Thrill', 'Most');",
+				"[ride2] = rollerCoaster('Dynamite_Dunes.xlsx', 'Fear', 'LEAST'); ",
+				"[ride3] = rollerCoaster('Rainbow_Valley.xlsx', 'Cost', 'Either'); "
+			],
+			"points": [3,3,3],
+			"bannedFunctions": [
+				"clear",
+				"clc"
+			],
+			"expectText": 0,
+			"expectExcel": 0,
+			"expectPlot": 0,
+			"expectImage": 0,
+			"expectRecursion": 0
+		},
+		{
+			"name": "bondHackBond",
+			"testcases": [
+				"[password1] = bondHackBond('Door1.txt'); ",
+				"[password2] = bondHackBond('Door2.txt'); ",
+				"[password3] = bondHackBond('Door3.txt'); "
+			],
+			"points": [3,3,3],
+			"bannedFunctions": [
+				"clear",
+				"clc"
+			],
+			"expectText": 0,
+			"expectExcel": 0,
+			"expectPlot": 0,
+			"expectImage": 0,
+			"expectRecursion": 0
+		},
+		{
+			"name": "cyberChase",
+			"testcases": [
+				"load('Scooby_Games.mat'); [outcome1, monsters1, log1] = cyberChase(Game1); ",
+				"load('Scooby_Games.mat'); [outcome2, monsters2, log2] = cyberChase(Game2); ",
+				"load('Scooby_Games.mat'); [outcome3, monsters3, log3] = cyberChase(Game3); ",
+				"load('Scooby_Games.mat'); [outcome4, monsters4, log4] = cyberChase(Game4); "
+			],
+			"points": [2,2,2,3],
+			"bannedFunctions": [
+				"clear",
+				"clc"
+			],
+			"expectText": 0,
+			"expectExcel": 0,
+			"expectPlot": 0,
+			"expectImage": 0,
+			"expectRecursion": 0
+		}
+        ]
+}

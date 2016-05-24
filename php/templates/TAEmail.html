@@ -1,0 +1,64 @@
+<html>
+    <body style='font-family:sans-serif;'>
+        <table width='100%' border='0' cellspacing='0' cellpadding='0' style='font-family:sans-serif;border:1px solid #000000;background-color:#ededed;max-width:600px;'>
+            <tr style='background-color:#445;color:#ffffff;'>
+                <td style='text-align: center;padding:10px;font-size:24px;'>CS 1371 Regrade Request</td>
+            </tr>
+            <tr>
+                <td style='text-align: center;padding:10px;'>
+                    <h3>Hey <?php echo $TANames; ?></h3>
+                    <h4>You got a regrade request!</h4>
+                    <center>
+                        <table style='border-collapse:collapse;' cellpadding='10'>
+                            <tr style='background-color:#cccccc;'>
+                                <td style='border-bottom: 1px solid #444444;font-weight:italic;'><em>Regrade ID:</em></td>
+                                <td style='border-bottom: 1px solid #444444;'><?php echo $regrade_id; ?></td>
+                            </tr>
+                            <tr style='background-color:#ffffff;'>
+                                <td style='border-bottom: 1px solid #444444;font-weight:italic;'><em>Student Name:</em></td>
+                                <td style='border-bottom: 1px solid #444444;'><?php echo $student_name; ?></td>
+                            </tr>
+                            <tr style='background-color:#cccccc;'>
+                                <td style='border-bottom: 1px solid #444444;'><em>Student Username:</em></td>
+                                <td style='border-bottom: 1px solid #444444;'><?php echo $student_username; ?></td>
+                            </tr>
+                            <tr style='background-color:#ffffff;'>
+                                <td style='border-bottom: 1px solid #444444;'><em>Homework Number:</em
+                                    ></td><td style='border-bottom: 1px solid #444444;'><?php echo $homework_num; ?></td>
+                            </tr>
+                            <tr style='background-color:#cccccc;'>
+                                <td style='border-bottom: 1px solid #444444;'><em>Type:</em></td>
+                                <td style='border-bottom: 1px solid #444444;'><?php echo $homework_type; ?></td>
+                            </tr>
+                            <tr style='background-color:#ffffff;'>
+                                <td style='border-bottom: 1px solid #444444;'><em>Total Problems:</em></td>
+                                <td style='border-bottom: 1px solid #444444;'><?php echo sizeof($regrade_problems); ?></td>
+                            </tr>
+                        </table>
+                    </center>
+                </td>
+            </tr>
+            <?php echo $regradeProblemStr; ?>
+            <tr style='padding:10px 0;'>
+                <td>
+                    <center>
+                        <table style='border-collapse:collapse;' cellpadding='10'>
+                            <tr>
+                                <td style='background-color:#4caf50;color:#fff;border:1px solid #000;'>Accept Regrade: </td>
+                                <td style='border:1px solid #000;'><a href='mailto:<?php echo $student_username; ?>@gatech.edu?subject=[CS 1371] Homework <?php echo $homework_num; ?> Regrade Request Accepted&body=<?php echo $accepted_email; ?>' target='_blank'>Desktop</a></td>
+                                <td style='border:1px solid #000;'><a href='https://mail.google.com/mail/?view=cm&fs=1&to=<?php echo $student_username; ?>@gatech.edu&su=[CS 1371] Homework <?php echo $homework_num; ?> Regrade Request Accepted&body=<?php echo $accepted_email; ?>' target='_blank'>Gmail</a></td>
+                                <td style='border:1px solid #000;'><a href='http://mail.live.com/default.aspx?page=Compose&to=<?php echo $student_username; ?> @gatech.edu&subject=[CS 1371] Homework <?php echo $homework_num; ?> Regrade Request Accepted&body=<?php echo str_replace("%0A","<br>",$accepted_email); ?>' target='_blank'>Outlook 365</a></td>
+                            </tr>
+                            <tr>
+                                <td style='background-color:#d62828;color:#fff;border:1px solid #000;'>Deny Regrade:</td>
+                                <td style='border:1px solid #000;'><a href='mailto:<?php echo $student_username; ?>?subject=[CS 1371] Homework <?php echo $homework_num; ?> Regrade Request Denied&body=<?php echo $denied_email; ?>' target='_blank'>Desktop</a></td>
+                                <td style='border:1px solid #000;'><a href='https://mail.google.com/mail/?view=cm&fs=1&to=<?php echo $student_username; ?>@gatech.edu&su=[CS 1371] Homework <?php echo $homework_num; ?> Regrade Request Denied&body=<?php echo $denied_email; ?>' target='_blank'>Gmail</a></td>
+                                <td style='border:1px solid #000;'><a href='http://mail.live.com/default.aspx?page=Compose&to=<?php echo $student_username; ?>@gatech.edu&subject=[CS 1371] Homework <?php echo $homework_num; ?> Regrade Request Denied&body=<?php echo str_replace("%0A","<br>",$denied_email); ?>' target='_blank'>Outlook 365</a></td>
+                            </tr>
+                        </table>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,452 @@
+
+html,body {
+    background-color: #3d3f4e;
+    font-family: 'Roboto',sans-serif;
+    font-size: 100%;
+    margin: 0 !important;
+    padding: 0;
+    position: relative;
+}
+.titleQuestion {
+    color: #ddd;
+    text-align: center;
+    font-weight: 300;
+}
+
+.rexText,.whiteText{
+    transition: all 200ms ease-in-out;
+}
+
+.redText {
+    color: #ff2c2c;
+}
+
+.yellowText {
+    color: #ffcb1c;
+}
+
+.greenText {
+    color: #21c421;
+}
+
+#pageTitle {
+    margin: 25px 0;
+}
+
+.mainTitle {
+    color: #fff !important;
+    font-size: 250%;
+}
+
+#feedbackText {
+    display: block;
+    margin: 10px auto;
+    height: 150px;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#actionButtonsWrap {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.actionButton {
+    font-size: 25px;
+    padding: 4px 15px;
+    border-radius: 3px;
+    display: inline-block;
+    opacity: 0.7;
+    cursor: pointer;
+    font-weight: 400;
+    margin-left: 7px;
+    transition: all 100ms ease-in-out;
+    -webkit-transition: all 100ms ease-in-out;
+    vertical-align: middle;
+}
+
+#submitButton {
+    border: 2px solid #68ff68;
+    color: #68ff68;
+    vertical-align: top;
+}
+
+#submitButton:hover{
+    border-color: #444;
+    color: #444;
+    background-color: #68ff68;
+}
+
+.contactQuestion {
+    text-align: center;
+    font-size: 150%;
+    color: white;
+    margin: 15px 0;
+}
+
+#contactedButtonWrap {
+    text-align: center;
+    
+}
+
+.yesnoButton {
+    display: inline-block;
+    border-radius: 2px;
+    color: aquamarine;
+    border: 1px solid aquamarine;
+    font-weight: 300;
+    font-size: 140%;
+    width: 90px;
+    margin: 0 5px;
+    padding: 7px 0;
+    transition: all 100ms ease-in-out;
+}
+
+.yesnoButton:hover, .yesnoButtonSelected{
+    background-color: aquamarine;
+    color: #000;
+    cursor: pointer;
+}
+
+.yesnoButton:hover{
+    border-color: #000;
+}
+
+#emailInput {
+    width: 40%;
+    outline: none;
+    margin: 0 auto;
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 30px;
+    color: aquamarine;
+    padding: 4px 7px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 100;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#contactWrap {
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 700ms linear;
+    background-color: #656880;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.contactWrapShow{
+    max-height: 400px !important;
+}
+
+#emailTitle {
+    color: white;
+    display: inline-block;
+    font-size: 170%;
+    margin-right: 10px;
+    font-weight: 300;
+    vertical-align: bottom;
+}
+
+#emailWrap {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#submitButtonWrap {
+    position: relative;
+    left: 100vw;
+    transition: all 700ms linear;
+}
+
+.showSubmitButton {
+    left: 0 !important;
+}
+
+#feedbackPageWrap {
+    overflow-x: hidden;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+#pageErrors {
+    width: 100%;
+    background-color: #fff;
+    max-height: 0px;
+    transition: max-height 800ms linear;
+    overflow: hidden;
+    font-weight: 300;
+    color: red;
+    text-align: center;
+}
+
+#pageErrorTitle {
+    font-size: 35px;
+    padding: 15px 0;
+}
+
+#pageErrorSubtitle {
+    font-size: 25px;
+}
+
+#errorsList {
+    display: inline-block;
+    color: black;
+    text-align: left;
+}
+
+@media only screen and (max-width: 450px){
+    .titleQuestion{
+        font-size: 150%;
+    }
+}
+@media only screen and (min-width: 451px){
+    .titleQuestion{
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    #feedbackText{
+        width: 75%;
+    }
+}
+@media only screen and (min-width: 701px){
+    #feedbackText{
+        width: 50%;
+    }
+}
+
+
+.whiteText {
+    color: #fff;
+}
+
+.waldo {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-image: url("images/waldo.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 500ms linear;
+}
+
+.waldoTop{
+    top: -100px;
+}
+
+.waldoBottom{
+    bottom:-100px;
+    -webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.waldoLeft{
+    left:-100px;
+    -webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.waldoRight{
+    right:-100px;
+    -webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.showWaldoTop{
+    top: 0px !important;
+}
+
+.showWaldoBottom{
+    bottom: 0px !important;
+}
+
+.showWaldoLeft{
+    left: 0px !important;
+}
+
+.showWaldoRight{
+    right: 0px !important;
+}
+
+#waldoText {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+#feedbackErrorPageWrap {
+    width: 94%;
+    padding: 0 3%;
+    height: 100%;
+    position: absolute;
+    left: 100vw;
+    top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: indianred;
+}
+
+#errorPageTitle {
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+#errorPageSubTitle {
+    font-size: 30px;
+    text-align: center;
+    color: #ffe5aa;
+    margin-top: 25px;
+}
+
+#errorPageText {
+    color: aliceblue;
+    font-size: 28px;
+    margin-top: 50px;
+}
+
+#emailButton {
+    display: block;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid white;
+    background-color: #ba0505;
+    color: white;
+    padding: 10px 18px;
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: 300;
+    transition: all 200ms ease-in-out;
+    text-decoration: none;
+}
+
+#emailButton:hover {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+#pac {
+    height: 50vh;
+    width: 50vh;
+    position: absolute;
+    top: 25vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    left: -50vh;
+    z-index: 5;
+}
+
+.pacOpen{
+    background-image: url("images/pac.png");
+}
+
+.pacClosed{
+    background-image: url("images/pac_closed.png");
+}
+
+#eaten {
+    height: 43vh;
+    position: absolute;
+    top: 28vh;
+    width: 150vw;
+    left: -200vw;
+    background-color: #fff;
+    text-align: center;
+    z-index: 4;
+}
+
+#thankYouWrap {
+    height: 43vh;
+    position: absolute;
+    top: 28vh;
+    width: 100vw;
+    text-align: center;
+    left: -150vw;
+    z-index: 4;
+}
+
+.thankYouTitle {
+    padding-top: 2vw;
+    font-size: 5vw;
+}
+
+.thankYouButton {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2vw;
+    padding: 1vw 2vw;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    text-decoration: none;
+}
+
+#thankYouButtonWrap {
+    text-align: center;
+    margin-top: 2vw;
+}
+
+#returnButton {
+    border: 1px solid #ff7575;
+    color: #ff7575;
+    margin-right: 5px;
+}
+
+#submitMoreButton {
+    border: 1px solid #757aff;
+    color: #757aff;
+    margin-left: 5px;
+}
+
+#returnButton:hover {
+    background-color: #ff7575;
+    color: #444;
+    box-shadow: 0px 2px 1px 1px rgba(0,0,0,0.75);
+}
+
+#submitMoreButton:hover {
+    color: #444;
+    background-color: #757aff;
+    box-shadow: 0px 2px 1px 1px rgba(0,0,0,0.75);
+}
+
+.thankYouSubTitle {
+    padding-top: 0.5vw;
+    font-size: 2.5vw;
+    color: #444;
+}
+
+.submitButtonRemoveAction {
+    pointer-events: none;
+}
+
+#pageCover {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 150vw;
+    left: -200vw;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 3;
+}

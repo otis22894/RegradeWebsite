@@ -1,0 +1,63 @@
+{
+	"hw03_rubric": [
+		{
+			"name": "ABCs_vectors",
+			"testcases": [
+				"[A B C D E F G H I J K L] = ABCs_vectors(5, [2 9 3 8 4 5 6], [3 0 0]);"
+			]
+		},
+		{
+			"name": "ABCs_strings",
+			"testcases": [
+				"[A1 B1 C1 D1 E1 F1 G1 H1 I1 J1 K1 L1] = ABCs_strings(str1, str2, vec1, alph1, ch1, double1, str3, str4);"
+			]
+		},
+		{
+			"name": "varInfo",
+			"testcases": [
+				"out1 = varInfo(12);",
+				"out2 = varInfo('words');",
+				"out3 = varInfo('134');"
+			]
+		},
+		{
+			"name": "multiVar",
+			"testcases": [
+				"out1 = multiVar([1 1 1 2 3 2 1], [5 4 3 2 1 -0.001 -2])",
+				"out2 = multiVar(1:12, 12:-1:1);",
+				"out3 = multiVar([5 4 3], [1 2 3]);"
+			]
+		},
+		{
+			"name": "theRatio",
+			"testcases": [
+				"[out1] = theRatio([342, 467, 426, 587, 587], [2948, 3185, 3120, 3597, 4000], [1960, 1961, 1962, 1963, 1964]);",
+				"[out2] = theRatio([467, 784, 835, 1010, 1389], [2948, 5938, 7901, 9213, 1163], [1960, 1970, 1980, 1990, 2000]);"
+			]
+		},
+		{
+			"name": "interweave",
+			"testcases": [
+				"mixed1 = interweave([1 2 3 4],[6 7 8 9]);",
+				"mixed2 = interweave([8, 8, 4, 5], [7, 4, 8]);",
+				"mixed3 = interweave([5, 18, 42], [78, 20, 4, 5]);"
+			]
+		},
+		{
+			"name": "gradeSorter",
+			"testcases": [
+				"sort1 = gradeSorter([94 36 78 100 77], 'RPLGM', 'EUQIM');",
+				"sort2 = gradeSorter([89 76 54 30 88 90], 'TYUIOE', 'JKLMUI');",
+				"out1 = gradeSorter([75 84 71 72 87 91 54], 'OTEITLG', 'LGTTIEO');"
+			]
+		},
+		{
+			"name": "caesarSalad",
+			"testcases": [
+				"coded1 = caesarSalad('harvard', 3)",
+				"coded2 = caesarSalad('agoraphobia', -26)",
+				"coded3 = caesarSalad('basic', 88)"
+			]
+		}
+		]
+}

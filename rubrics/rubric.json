@@ -1,0 +1,29 @@
+{
+	"testRubric": [
+		{
+			"name": "imAProblemName",
+			"testcases": "out = imAProblemName('test');",
+			"points": 30,
+			"bannedFunctions": "sum",
+			"expectText": 0,
+			"expectExcel": 0,
+			"expectPlot": 0,
+			"expectImage": 1,
+			"expectRecursion": 0
+		},
+		{
+			"name": "imAnotherProblem",
+			"testcases": [
+				"out = imAnotherProblem",
+				"out2 = imAnotherProblem(5)"
+			],
+			"points": [50,20],
+			"bannedFunctions": "sum",
+			"expectText": 0,
+			"expectExcel": 0,
+			"expectPlot": 1,
+			"expectImage": 0,
+			"expectRecursion": 1
+		}
+	]
+}
